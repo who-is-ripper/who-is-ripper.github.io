@@ -1,91 +1,134 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-header {
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+  }
+  
+  .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
-    background-color: #fff;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-}
-
-.logo {
-    font-size: 24px;
+    padding: 10px;
+    background-color: #e0e0e0;
+  }
+  
+  .logo {
+    font-size: 20px;
     font-weight: bold;
-    color: #ff0000; /* YouTube red color */
-}
-
-.search-box {
-    display: flex;
-    flex-grow: 1; /* Розтягуємо на залишок доступного простору */
-    margin: 0 16px; /* Задаємо відступи для елементу */
-}
-
-.search-box input {
-    flex-grow: 1; /* Розтягуємо на залишок доступного простору */
-    padding: 8px;
-    border: 1px solid #ccc;
-}
-
-.search-box button {
-    padding: 8px 16px;
-    background-color: #ff0000;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-.user-section {
-    display: flex;
-    align-items: center;
-}
-
-.user-avatar {
-    margin-right: 10px;
-    padding: 8px;
-    background-color: #ccc;
-    border-radius: 50%;
-}
-
-nav {
-    background-color: #333;
-    color: #fff;
-}
-
-nav ul {
+    color: #000;
+  }
+  
+  .nav {
     display: flex;
     list-style: none;
-    padding: 0;
     margin: 0;
-}
-
-nav li {
+    padding: 0;
+  }
+  
+  .nav li {
+    padding: 5px 10px;
+  }
+  
+  .nav li a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     padding: 10px;
+  }
+  
+  .search-bar {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .search-bar button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e0e0e0;
     cursor: pointer;
-}
-
-main-content {
+  }
+  
+  .recommended-videos,
+  .trending-videos {
+    margin-bottom: 10px;
+  }
+  
+  .recommended-videos h2,
+  .trending-videos h2 {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .video-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-/* Простий стиль для відео-контейнера */
-.video-container {
-    width: 300px;
-    margin: 16px;
-}
-
-video {
+    gap: 10px;
+  }
+  
+  .video {
+    width: 240px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .video a {
+    display: block;
+  }
+  
+  .video img {
     width: 100%;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-}
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .video .info {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .video .info strong {
+    font-weight: bold;
+  }
+  
+  .video .info span {
+    color: #888;
+  }
+  
+  /* Додайте медіазапити для адаптивного дизайну на менших екранах */
+  
+  @media only screen and (max-width: 768px) {
+    .nav li {
+      font-size: 12px;
+    }
+    .video {
+      width: 150px;
+    }
+    .video img {
+      height: 100px;
+    }
+  }
+  
