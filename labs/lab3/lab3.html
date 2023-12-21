@@ -1,108 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YouTube Clone</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #fff;
-      padding: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    nav {
-      display: flex;
-      gap: 20px;
-    }
-
-    main {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      padding: 20px;
-    }
-
-    .video-card {
-      width: 300px;
-      margin: 20px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease-in-out;
-      display: flex;
-      flex-direction: column;
-      align-items: stretch;
-    }
-
-    .video-card:hover {
-      transform: scale(1.05);
-    }
-
-    .video-thumbnail {
-      width: 100%;
-    }
-
-    .video-info {
-      padding: 10px;
-    }
-
-    /* New styles for the search bar */
-    .search-bar {
-      flex-grow: 3; /* Takes up remaining space in the header */
-      margin: 0 20px;
-    }
-
-    .search-input {
-      width: 100%;
-      padding: 8px;
-      box-sizing: border-box;
-    }
-
-    .search-button {
-      background-color: #9b9b9b;
-      color: #fff;
-      border: none;
-      padding: 8px 12px;
-      cursor: pointer;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1><a href="labs/lab3/lab3.html">YouTube Clone</a></h1>
-    <div class="search-bar">
-        <input type="text" class="search-input" placeholder="Search...">
-        <button class="search-button">Search</button>
-    </div>
+    <header>
+        <!-- Заголовок і логотип YouTube -->
+        <div class="logo">YouTube</div>
+
+        <!-- Пошук -->
+        <div class="search-box">
+            <input type="text" placeholder="Пошук">
+            <button>Пошук</button>
+        </div>
+
+        <!-- Розділ з іконками, наприклад, аватар та інші елементи -->
+        <div class="user-section">
+            <div class="user-avatar">User</div>
+            <!-- Додайте інші іконки, які вам потрібні -->
+        </div>
+    </header>
+
     <nav>
-      <a href="who-is-ripper.github.io/labs/lab3/lab3.html"></a>
-      <a href="#">Trending</a>
-      <a href="#">Subscriptions</a>
-      <a href="#">Library</a>
-      <a href="#">History</a>
+        <!-- Навігаційне меню -->
+        <ul>
+            <li>Головна</li>
+            <li>Відео</li>
+            <li>Канали</li>
+            <li>Ігри</li>
+            <!-- Додайте інші пункти меню, які вам потрібні -->
+        </ul>
     </nav>
-  </header>
 
-  <main>
-    <!-- Приклад відеокартки -->
-    <div class="video-card">
-      <img src="thumbnail.jpg" alt="Video Thumbnail" class="video-thumbnail">
-      <div class="video-info">
-        <h3>Video Title</h3>
-        <p>Author Name</p>
-      </div>
-    </div>
+    <section class="main-content">
+        <!-- Основний вміст, такий як відео, рекомендації тощо -->
+        <!-- Використовуйте Flexbox для створення каркасу з елементами -->
+    </section>
 
-    <!-- Додайте інші відеокартки за потреби -->
-
-  </main>
+    <footer>
+        <!-- Футер, може включати посилання, інформацію, тощо -->
+    </footer>
 </body>
 </html>
