@@ -31,3 +31,8 @@ footer {
   padding: 10px;
   text-align: center;
 }
+p {
+  font-size: 1rem;
+  font-family: sans-serif;
+  margin: 20px;
+}
