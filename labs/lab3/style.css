@@ -20,9 +20,12 @@ header {
 
 .search-box {
     display: flex;
+    flex-grow: 1; /* Розтягуємо на залишок доступного простору */
+    margin: 0 16px; /* Задаємо відступи для елементу */
 }
 
 .search-box input {
+    flex-grow: 1; /* Розтягуємо на залишок доступного простору */
     padding: 8px;
     border: 1px solid #ccc;
 }
