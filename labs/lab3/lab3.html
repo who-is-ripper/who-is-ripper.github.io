@@ -1,228 +1,43 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YouTube</title>
-
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
-
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Roboto, sans-serif;
-    }
-
-    .container {
-      display: flex;
-      flex-direction: column;
-      width: 100vw;
-      min-height: 100vh;
-    }
-
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
-      background-color: #e0e0e0;
-    }
-
-    .logo {
-      font-size: 20px;
-      font-weight: bold;
-      color: #000;
-    }
-
-    .nav {
-      display: flex;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .nav li {
-      padding: 5px 10px;
-    }
-
-    .nav li a {
-      color: #000;
-      text-decoration: none;
-    }
-
-    .main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      padding: 10px;
-    }
-
-    .search-bar {
-      display: flex;
-      margin-bottom: 10px;
-    }
-
-    .search-bar input {
-      flex: 1;
-      padding: 5px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    .search-bar button {
-      padding: 5px 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      background-color: #e0e0e0;
-      cursor: pointer;
-    }
-
-    .recommended-videos,
-    .trending-videos {
-      margin-bottom: 10px;
-    }
-
-    .recommended-videos h2,
-    .trending-videos h2 {
-      margin-bottom: 5px;
-      font-size: 16px;
-      font-weight: bold;
-    }
-
-    .video-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .video {
-      width: 240px;
-      border: 1px solid #eee;
-      border-radius: 5px;
-      padding: 5px;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .video a {
-      display: block;
-    }
-
-    .video img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-    }
-
-    .video .info {
-      font-size: 14px;
-      margin-top: 5px;
-    }
-
-    .video .info strong {
-      font-weight: bold;
-    }
-
-    .video .info span {
-      color: #888;
-    }
-
-    /* Додайте медіазапити для адаптивного дизайну на менших екранах */
-
-    @media only screen and (max-width: 768px) {
-      .nav li {
-        font-size: 12px;
-      }
-      .video {
-        width: 150px;
-      }
-      .video img {
-        height: 100px;
-      }
-    }
-  </style>
+  <title>YouTube Clone</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-    <div class="header">
+  <header>
+    <div class="container">
       <a href="/" class="logo">YouTube</a>
-      <ul class="nav">
-        <li><a href="/videos">Відео</a></li>
-        <li><a href="/channels">Каналы</a></li>
-        <li><a href="/playlists">Плейлисты</a></li>
-        <li><a href="/search">Пошук</a></li>
-      </ul>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Explore</a>
+        <a href="#">Sign in</a>
+      </nav>
     </div>
-    <div class="main">
-      <div class="search-bar">
-        <input type="text" placeholder="Пошук">
-        <button type="submit">Пошук</button>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/<video-id>" frameborder="0" allowfullscreen></iframe>
       </div>
-      <div class="recommended-videos">
-        <h2>Рекомендовані відео</h2>
+
+      <div class="related-videos">
+        <h2>Related videos</h2>
         <ul>
-          <li>
-            <a href="/watch?v=1234567890">Відео 1</a>
-            <img src="https://i.ytimg.com/vi/1234567890/maxresdefault.jpg">
-            <div class="info">
-              <strong>Назва відео</strong>
-              <span>Автор</span>
-              <span>Дата публікації</span>
-            </div>
-          </li>
-          <li>
-            <a href="/watch?v=9876543210">Відео 2</a>
-            <img src="https://i.ytimg.com/vi/9876543210/maxresdefault.jpg">
-            <div class="info">
-              <strong>Назва відео</strong>
-              <span>Автор</span>
-              <span>Дата публікації</span>
-            </div>
-          </li>
-          <li>
-            <a href="/watch?v=7654321098">Відео 3</a>
-            <img src="https://i.ytimg.com/vi/7654321098/maxresdefault.jpg">
-            <div class="info">
-              <strong>Назва відео</strong>
-              <span>Автор</span>
-              <span>Дата публікації</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="trending-videos">
-        <h2>Трендові відео</h2>
-        <ul>
-          <li>
-            <a href="/watch?v=1234567890">Відео 1</a>
-            <img src="https://i.ytimg.com/vi/1234567890/maxresdefault.jpg">
-            <div class="info">
-              <strong>Назва відео</strong>
-              <span>Автор</span>
-              <span>Дата публікації</span>
-            </div>
-          </li>
-          <li>
-            <a href="/watch?v=9876543210">Відео 2</a>
-            <img src="https://i.ytimg.com/vi/9876543210/maxresdefault.jpg">
-            <div class="info">
-              <strong>Назва відео</strong>
-              <span>Автор</span>
-              <span>Дата публікації</span>
-            </div>
-          </li>
-          <li>
-            <a href="/watch?v=7654321098">Відео 3</a>
-            <img src="https://i.ytimg.com/vi/7654321098/maxresdefault.jpg">
-            <div class="info">
-              <strong>Назва відео</strong>
-              <span>Автор</span>
-              <span>Дата публікації</span>
-            </div>
-          </li>
+          <li><a href="#">Video 1</a></li>
+          <li><a href="#">Video 2</a></li>
+          <li><a href="#">Video 3</a></li>
         </ul>
       </div>
     </div>
-  </div>
-  
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Copyright &copy; 2023 YouTube</p>
+    </div>
+  </footer>
+</body>
+</html>
