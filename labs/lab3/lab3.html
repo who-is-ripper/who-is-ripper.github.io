@@ -1,43 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>YouTube Clone</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>YouTube Clone</title>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <a href="/" class="logo">YouTube</a>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Explore</a>
-        <a href="#">Sign in</a>
-      </nav>
-    </div>
-  </header>
+    <header>
+        <!-- YouTube Logo and Search Bar -->
+        <div class="logo-container">
+            <img src="youtube_logo.png" alt="YouTube Logo">
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+    </header>
 
-  <main>
-    <div class="container">
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/<video-id>" frameborder="0" allowfullscreen></iframe>
-      </div>
+    <main>
+        <!-- Video Thumbnails -->
+        <div class="video-thumbnail">
+            <!-- Each video thumbnail should be a separate container -->
+            <img src="video_thumbnail1.jpg" alt="Video 1">
+            <h3>Video Title 1</h3>
+            <p>Video Description</p>
+        </div>
 
-      <div class="related-videos">
-        <h2>Related videos</h2>
-        <ul>
-          <li><a href="#">Video 1</a></li>
-          <li><a href="#">Video 2</a></li>
-          <li><a href="#">Video 3</a></li>
-        </ul>
-      </div>
-    </div>
-  </main>
+        <!-- Repeat the structure for more video thumbnails -->
 
-  <footer>
-    <div class="container">
-      <p>Copyright &copy; 2023 YouTube</p>
-    </div>
-  </footer>
+    </main>
+
+    <footer>
+        <!-- Footer content, such as links, etc. -->
+    </footer>
 </body>
 </html>
