@@ -1,47 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Clone</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <!-- Заголовок і логотип YouTube -->
-        <div class="logo">YouTube</div>
-
-        <!-- Пошук -->
-        <div class="search-box">
-            <input type="text" placeholder="Пошук">
-            <button>Пошук</button>
-        </div>
-
-        <!-- Розділ з іконками, наприклад, аватар та інші елементи -->
-        <div class="user-section">
-            <div class="user-avatar">User</div>
-            <!-- Додайте інші іконки, які вам потрібні -->
-        </div>
-    </header>
-
-    <nav>
-        <!-- Навігаційне меню -->
+<div class="container">
+    <div class="header">
+      <a href="/" class="logo">YouTube</a>
+      <ul class="nav">
+        <li><a href="/videos">Відео</a></li>
+        <li><a href="/channels">Каналы</a></li>
+        <li><a href="/playlists">Плейлисты</a></li>
+        <li><a href="/search">Пошук</a></li>
+      </ul>
+    </div>
+    <div class="main">
+      <div class="search-bar">
+        <input type="text" placeholder="Пошук">
+        <button type="submit">Пошук</button>
+      </div>
+      <div class="recommended-videos">
+        <h2>Рекомендовані відео</h2>
         <ul>
-            <li>Головна</li>
-            <li>Відео</li>
-            <li>Канали</li>
-            <li>Ігри</li>
-            <!-- Додайте інші пункти меню, які вам потрібні -->
+          <li>
+            <a href="/watch?v=1234567890">Відео 1</a>
+            <img src="https://i.ytimg.com/vi/1234567890/maxresdefault.jpg">
+            <div class="info">
+              <strong>Назва відео</strong>
+              <span>Автор</span>
+              <span>Дата публікації</span>
+            </div>
+          </li>
+          <li>
+            <a href="/watch?v=9876543210">Відео 2</a>
+            <img src="https://i.ytimg.com/vi/9876543210/maxresdefault.jpg">
+            <div class="info">
+              <strong>Назва відео</strong>
+              <span>Автор</span>
+              <span>Дата публікації</span>
+            </div>
+          </li>
+          <li>
+            <a href="/watch?v=7654321098">Відео 3</a>
+            <img src="https://i.ytimg.com/vi/7654321098/maxresdefault.jpg">
+            <div class="info">
+              <strong>Назва відео</strong>
+              <span>Автор</span>
+              <span>Дата публікації</span>
+            </div>
+          </li>
         </ul>
-    </nav>
-
-    <section class="main-content">
-        <!-- Основний вміст, такий як відео, рекомендації тощо -->
-        <!-- Використовуйте Flexbox для створення каркасу з елементами -->
-    </section>
-
-    <footer>
-        <!-- Футер, може включати посилання, інформацію, тощо -->
-    </footer>
-</body>
-</html>
+      </div>
+      <div class="trending-videos">
+        <h2>Трендові відео</h2>
+        <ul>
+          <li>
+            <a href="/watch?v=1234567890">Відео 1</a>
+            <img src="https://i.ytimg.com/vi/1234567890/maxresdefault.jpg">
+            <div class="info">
+              <strong>Назва відео</strong>
+              <span>Автор</span>
+              <span>Дата публікації</span>
+            </div>
+          </li>
+          <li>
+            <a href="/watch?v=9876543210">Відео 2</a>
+            <img src="https://i.ytimg.com/vi/9876543210/maxresdefault.jpg">
+            <div class="info">
+              <strong>Назва відео</strong>
+              <span>Автор</span>
+              <span>Дата публікації</span>
+            </div>
+          </li>
+          <li>
+            <a href="/watch?v=7654321098">Відео 3</a>
+            <img src="https://i.ytimg.com/vi/7654321098/maxresdefault.jpg">
+            <div class="info">
+              <strong>Назва відео</strong>
+              <span>Автор</span>
+              <span>Дата публікації</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
