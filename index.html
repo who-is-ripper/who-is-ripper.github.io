@@ -4,38 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ваш заголовок</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            padding-top: 56px;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
 
         header {
-            background-color: #343a40;
+            background-color: #333;
             color: #fff;
-            padding: 15px 0;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: #eee;
+            padding: 10px;
             text-align: center;
         }
 
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            text-align: center;
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
         }
 
-        section img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-top: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        section p {
-            font-size: 1.2em;
-            color: #555;
-            margin-top: 15px;
+        nav a:hover {
+            background-color: #ddd;
         }
     </style>
 </head>
