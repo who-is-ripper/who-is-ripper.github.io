@@ -37,10 +37,21 @@
       margin: 20px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
     }
 
     .video-card:hover {
       transform: scale(1.05);
+    }
+
+    .video-thumbnail {
+      width: 100%;
+    }
+
+    .video-info {
+      padding: 10px;
     }
   </style>
 </head>
@@ -59,9 +70,11 @@
   <main>
     <!-- Приклад відеокартки -->
     <div class="video-card">
-      <img src="thumbnail.jpg" alt="Video Thumbnail" style="width: 100%;">
-      <h3>Video Title</h3>
-      <p>Author Name</p>
+      <img src="thumbnail.jpg" alt="Video Thumbnail" class="video-thumbnail">
+      <div class="video-info">
+        <h3>Video Title</h3>
+        <p>Author Name</p>
+      </div>
     </div>
 
     <!-- Додайте інші відеокартки за потреби -->
