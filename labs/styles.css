@@ -1,0 +1,78 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  .container {
+    width: 800px;
+    margin: 0 auto;
+  }
+  
+  header {
+    background-color: #007bff;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  main {
+    padding: 20px 0;
+  }
+  
+  .week-plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .dates {
+    list-style: none;
+  }
+  
+  .goals {
+    width: 30%;
+  }
+  
+  .goals-list {
+    list-style: none;
+  }
+  
+  .to-do {
+    width: 40%;
+  }
+  
+  .to-do-list {
+    list-style: none;
+  }
+  
+  .notes {
+    width: 30%;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      width: 100%;
+    }
+    .week-plan {
+      flex-direction: column;
+    }
+    .goals,
+    .to-do,
+    .notes {
+      margin-bottom: 10px;
+    }
+  }
+  
