@@ -7,3 +7,6 @@ body{
     background: white;
     color: black;
 }
+.Top_menu li{
+    display: inline-block;
+}
