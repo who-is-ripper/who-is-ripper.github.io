@@ -13,3 +13,22 @@ header {
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
+
+/*Style for navigation*/
+.navigation {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.menu {
+    display: block;
+    
+}
