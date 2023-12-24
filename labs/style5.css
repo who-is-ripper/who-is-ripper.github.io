@@ -16,3 +16,8 @@ header{
 .Top_menu li{
     display: inline-block;
 }
+.Top_menu a{
+    font-family: arial;
+    font-size: 20px;
+    color: black;
+}
