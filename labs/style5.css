@@ -6,6 +6,10 @@ body{
     background: white;
     color: black;
 }
+header{
+    display: flex;
+    justify-content: end;
+}
 .Logo, .Top_menu{
     display: inline-block;
 }
