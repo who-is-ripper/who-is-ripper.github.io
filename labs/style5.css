@@ -19,3 +19,22 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
+.navbar-menu{
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.navbar-menu li{
+    display: inline-block;
+}
+
+.navbar-menu li a{
+    display: inline-block;
+}
+
+.navbar-wrap{
+    display: flex;
+    flex-flow: row nowrap;
+}
