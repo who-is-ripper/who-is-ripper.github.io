@@ -38,3 +38,7 @@ body {
     display: flex;
     flex-flow: row nowrap;
 }
+
+.navbar-brand{
+    font-weight: ;
+}
